@@ -9,13 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    override var preferredStatusBarStyle: UIStatusBarStyle {return .lightContent}
+    
+    @IBOutlet weak var launchModeView: UIView!
+    @IBOutlet weak var launchLabel: UILabel!
+    @IBOutlet weak var onLabel: UILabel!
+     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setNeedsStatusBarAppearanceUpdate()
     }
 
-   override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
+    @IBAction func launchPressed(_ sender: Any) {
+        
+    }
+    
 
 }
 

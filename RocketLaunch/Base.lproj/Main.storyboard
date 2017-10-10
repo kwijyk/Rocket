@@ -22,6 +22,9 @@
                                 <rect key="frame" x="139" y="285" width="96" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="powerButton"/>
+                                <connections>
+                                    <action selector="launchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dDf-Je-KTF"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q9q-PT-2Se">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
@@ -75,6 +78,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="launchLabel" destination="DGp-ca-dbN" id="eSx-Aa-n2o"/>
+                        <outlet property="launchModeView" destination="Q9q-PT-2Se" id="aqI-kH-pqt"/>
+                        <outlet property="onLabel" destination="iod-CM-sLf" id="NyT-Vj-R74"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
