@@ -33,10 +33,9 @@ class ViewController: UIViewController {
         launchModeView.isHidden = false
         player?.play()
         
+        rocketTopConstraint.constant = 50
         UIView.animate(withDuration: 3.0, animations: {
-            self.rocketTopConstraint.constant = 50
             self.view.layoutIfNeeded()
-            
         }) { _ in
             self.launchLabel.isHidden = false
             self.onLabel.isHidden = false
